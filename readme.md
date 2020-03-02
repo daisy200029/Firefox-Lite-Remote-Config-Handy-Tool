@@ -1,9 +1,9 @@
 # Firefox Lite Remote Config Handy Tool
 
-This script can be used to get/publish/rollback Firebase remote configuration on either [FirefoxLite Preview](https://console.firebase.google.com/u/0/project/rocketnightly/config) or [Production](https://console.firebase.google.com/u/0/project/zerda-dcf76/config) remote config 
+ This script can be used to get/publish/rollback Firebase remote configuration on either [FirefoxLite Preview](https://console.firebase.google.com/u/0/project/rocketnightly/config) or [Production](https://console.firebase.google.com/u/0/project/zerda-dcf76/config) remote config 
 
 ## Prerequisition
-1. Download admin private key from Firebase settings, refer [get access token](https://firebase.google.com/docs/remote-config/use-config-rest)
+1. Download admin private key from Firefox Nightly and Firefox Prod Firebase settings , refer [get access token](https://firebase.google.com/docs/remote-config/use-config-rest)
 
 ## Installation
 
@@ -17,7 +17,8 @@ pip3 install requirements.txt
  
 Please use one of the following commands:
 
-```python
+```bash
+
 python3 remoteConfig.py --action=get --env=<prod|nightly>
 python3 remoteConfig.py --action=publish --env=nightly --etag=<LATEST_ETAG>
 python3 remoteConfig.py --action=versions --env=<prod|nightly>
