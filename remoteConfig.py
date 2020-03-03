@@ -7,11 +7,11 @@ BASE_URL = 'https://firebaseremoteconfig.googleapis.com'
 SCOPES = ['https://www.googleapis.com/auth/firebase.remoteconfig']
 
 ENVS_LIST=["nightly","prod"]
-ENVS_INFO={ENVS_LIST[0]:\
-  {"PROJECT_ID":"rocketnightly",\
-    "KEY_FILE":"service-account-nightly.json"}\
-    ,ENVS_LIST[1]:\
-      {"PROJECT_ID":"zerda-dcf76",\
+ENVS_INFO={
+  ENVS_LIST[0]:{"PROJECT_ID":"rocketnightly",
+    "KEY_FILE":"service-account-nightly.json"},
+    ENVS_LIST[1]:
+      {"PROJECT_ID":"zerda-dcf76",
         "KEY_FILE":"service-account-prod.json"}}
 
 
