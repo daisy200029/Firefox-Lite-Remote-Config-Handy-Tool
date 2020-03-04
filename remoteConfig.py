@@ -6,11 +6,10 @@ from oauth2client.service_account import ServiceAccountCredentials
 BASE_URL = 'https://firebaseremoteconfig.googleapis.com'
 SCOPES = ['https://www.googleapis.com/auth/firebase.remoteconfig']
 
-ENVS_LIST=["nightly","prod"]
 ENVS_INFO={
-  ENVS_LIST[0]:{"PROJECT_ID":"rocketnightly",
+  "nightly":{"PROJECT_ID":"rocketnightly",
     "KEY_FILE":"service-account-nightly.json"},
-    ENVS_LIST[1]:
+    "prod":
       {"PROJECT_ID":"zerda-dcf76",
         "KEY_FILE":"service-account-prod.json"}}
 
@@ -21,7 +20,7 @@ def _set_env(env):
     env: user input environment key 
         
   """
-  if env in ENVS_LIST:
+  if env in ENVS_INFO:
     global PROJECT_ID , KEY_FILE ,REMOTE_CONFIG_ENDPOINT, REMOTE_CONFIG_URL
     PROJECT_ID = ENVS_INFO[env]["PROJECT_ID"]
     KEY_FILE = ENVS_INFO[env]["KEY_FILE"]
