@@ -131,7 +131,6 @@ def _publish(env, etag):
 
 def main():
   parser = argparse.ArgumentParser()
-  # parser.add_argument('--env',required=True, default="nightly", help:'env can be either [nightly or prod]')
   parser.add_argument('--env',required=True, help='env can be "nightly"or "prod"')
   parser.add_argument('--action')
   parser.add_argument('--etag')
