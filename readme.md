@@ -12,7 +12,7 @@
 Use the package manager [pip3](https://pip.pypa.io/en/stable/) to install Remote Config Script.
 
 ```bash
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 
 ## Usage
