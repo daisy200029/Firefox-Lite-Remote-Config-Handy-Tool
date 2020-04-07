@@ -1,4 +1,5 @@
 # Firefox Lite Remote Config Handy Tool
+
  This script can 1)retrieve, 2)publish, 3)rollback version 4)list versions of Firebase remote configuration on [FirefoxLite Preview](https://console.firebase.google.com/u/0/project/rocketnightly/config) or [FirefoxLite Production](https://console.firebase.google.com/u/0/project/zerda-dcf76/config) projects.
 
 ## Prerequisition
